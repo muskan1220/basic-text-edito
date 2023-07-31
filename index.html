@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Text Editor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="text-editor">
+      <div class="toolbar">
+        <button class="toolbar-button" data-command="bold"><b>B</b></button>
+        <button class="toolbar-button" data-command="italic"><i>I</i></button>
+        <button class="toolbar-button" data-command="underline">
+          <u>U</u>
+        </button>
+        <select class="toolbar-select" data-command="fontSize">
+          <option value="">Font Size</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+        <select class="toolbar-select" data-command="fontName">
+          <option value="">Font Family</option>
+          <option value="Arial">Arial</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Times New Roman">Times New Roman</option>
+        </select>
+        <input type="color" class="toolbar-input" data-command="foreColor" />
+      </div>
+      <div class="content" contenteditable="true">Start typing here...</div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
